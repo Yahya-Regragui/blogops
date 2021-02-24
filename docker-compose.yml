@@ -1,6 +1,7 @@
 version: '3.7'
 services:
     backend:
+        image: yahyaregragui/blogops_backend
         build:
             context: ./backend
             dockerfile: Dockerfile
@@ -19,6 +20,7 @@ services:
             - app
     
     frontend:
+        image: yahyaregragui/blogops_frontend
         build:
             context: ./frontend
             dockerfile: Dockerfile

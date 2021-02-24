@@ -6,9 +6,7 @@ services:
             context: ./backend
             dockerfile: Dockerfile
 
-        environment:
-          - DB_HOST=mysql:3306
-          - DB_NAME=devops
+        
 
         ports:
             - 8000:8000

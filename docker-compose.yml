@@ -13,7 +13,7 @@ services:
         volumes:
             - ./backend:/app/backend
         depends_on:
-            - mysql
+            - db
         networks:
             - app
     
@@ -33,9 +33,9 @@ services:
         depends_on:
             - backend
             
-    mysql:
+    db:
         image: mysql:8.0
-        container_name: mysql
+        container_name: db
         restart: unless-stopped
         ports:
           - "3306:3306"

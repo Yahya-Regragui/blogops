@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: build app
       run: docker-compose build
-    - name: docker up
-      run: docker-compose up -d
+    - name: publish app
+      run: docker push
       
     

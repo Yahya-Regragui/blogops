@@ -19,6 +19,6 @@ jobs:
     - name: build app
       run: docker-compose build
     - name: publish app
-      run: docker push
+      run: docker-compose push
       
     

@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'segoe ui';
+}
+.postContainer{
+    width: 60%;
+    
+    position: relative;
+}
+.post-deleted{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 26, 9, 0.781);
+    height: 50px;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.home{
+    padding: 5px;
+    border: 0;
+    margin-top: 10px;
+    background-color: rgb(59, 165, 226);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+}
+.article{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    position: relative;
+}
+h1{
+    font-size: 25px;
+}
+.article p {
+    text-align: left;
+    
+    line-height: 1.8;
+}
+.postControl{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+#delete{
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border:none;
+    background-color: red;
+    cursor: pointer;
+    outline: none;
+}
+#edit{
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border:none;
+    background-color: rgb(70, 74, 114);
+    padding-right: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.footer{
+    height: 100px;
+}

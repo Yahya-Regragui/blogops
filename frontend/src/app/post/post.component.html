@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="postContainer">
+        <div class="post-deleted" *ngIf='post_deleted' >
+            <h2>Post Deleted</h2>
+        </div>
+        <button class="home" [routerLink]="['/home']">Go To Home</button>
+        <div class='article'>
+            <h1>{{post_title}}</h1>
+            <br>
+            <p>{{post_body}}</p>
+            <div class="postControl" >
+                <button [routerLink]="['/edit', post_id,post_title,post_body]" id="edit">Edit</button>
+                <button (click)='deletePost(post_id)' (click)='postDeleted()' id="delete">Delete</button>
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</div>

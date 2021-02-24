@@ -1,0 +1,93 @@
+.container{
+    font-family: 'segoe ui';
+}
+
+.form{
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+textarea{
+    height: 50px;
+}
+.create-article{
+
+
+    width: 300px;
+}
+.usr-inp{
+    display: flex;
+    flex-direction: column;
+}
+input, textarea{
+    padding: 5px;
+    border-radius: 5px;
+    border:none;
+    outline:none;
+    margin-top: 10px;
+    
+
+}
+.show-post{
+    width: 500px;
+    margin-top: 30px;
+    background-color: rgb(224, 220, 220);
+    padding: 20px;
+    border-radius: 7px;
+}
+label{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+}
+#post-body{
+    margin-top: 10px;
+}
+#post-title{
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 10px;
+}
+.show-post button{
+    margin-top: 10px;
+}
+#delete{
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border:none;
+    background-color: red;
+    cursor: pointer;
+    outline: none;
+}
+#edit{
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border:none;
+    background-color: rgb(70, 74, 114);
+    padding-right: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.submit{
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border:none;
+    background-color: rgb(62, 186, 202);
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    outline:none;
+}
+.footer{
+    height: 100px;
+}

@@ -1,0 +1,71 @@
+.container{
+    font-family: 'segoe ui';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.home{
+    padding: 5px;
+    border: 0;
+    margin-top: 10px;
+    background-color: rgb(59, 165, 226);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form{
+    margin-top: 100px;
+}
+.post-saved{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(122, 194, 122);
+    height: 50px;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+}
+textarea{
+    height: 50px;
+}
+.create-article{
+    width: 300px;
+    margin-top: 20px;
+}
+.usr-inp{
+    display: flex;
+    flex-direction: column;
+}
+input, textarea{
+    padding: 5px;
+    outline:none;
+    margin-top: 10px;
+}
+label{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+}
+.submit{
+    margin-top: 10px;
+    background-color: rgb(107, 207, 107);
+    border: 0;
+    color:white;
+    font-weight: bold;
+    outline:none;
+    padding:5px;
+    cursor: pointer;
+}
+#post-body{
+    margin-top: 10px;
+}
+.footer{
+    height:     100px;
+}

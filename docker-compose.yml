@@ -13,7 +13,7 @@ services:
         volumes:
             - ./backend:/app/backend
         depends_on:
-            - db
+            - mysql
         networks:
             - app
     

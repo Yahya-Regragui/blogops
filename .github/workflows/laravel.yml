@@ -23,7 +23,7 @@ jobs:
     - name: running db
       uses: jakejarvis/wait-action@master
       with:
-        time: '20s'
+        time: '10s'
         
     - name: unit testing
       run: |

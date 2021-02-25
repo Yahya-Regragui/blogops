@@ -20,10 +20,10 @@ jobs:
     - name: build app
       run: docker-compose up -d --build
       
-    #- name: running db
-     # uses: jakejarvis/wait-action@master
-      #with:
-       # time: '10s'
+    - name: running db
+      uses: jakejarvis/wait-action@master
+      with:
+        time: '20s'
     - name: docker ps
       run: docker ps -a
     - name: unit testing

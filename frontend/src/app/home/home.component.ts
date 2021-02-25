@@ -10,8 +10,8 @@ import { Post } from '../post.model';
 export class HomeComponent implements OnInit {
 
     posts$: Post[];
-    apiUrl:string = 'http://192.168.11.109:8000/api/articles';
-    apiPostUrl:string = 'http://192.168.11.109:8000/api/article';
+    apiUrl:string = 'http://localhost:8000/api/articles';
+    apiPostUrl:string = 'http://localhost:8000/api/article';
     apiPostUrlTest:string = 'http://httpbin.org/post';
     
 

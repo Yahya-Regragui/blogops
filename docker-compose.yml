@@ -5,9 +5,8 @@ services:
         build:
             context: ./backend
             dockerfile: Dockerfile
-
-        
-
+        volumes:
+            - ./backend:/app/backend
         ports:
             - 8000:8000
         
@@ -25,7 +24,6 @@ services:
         ports:
             - 4200:4200
         
-        
         networks:
             - app
         depends_on:
@@ -41,8 +39,9 @@ services:
           - MYSQL_ROOT_PASSWORD=root
           - MYSQL_PASSWORD=root
           - MYSQL_DATABASE=devops
+        command: --init-file /data/application/init.sql
         volumes: 
-          - ./sql-dump:/docker-entrypoint-initdb.d
+          - ./init.sql:/docker-entrypoint-initdb.d/init.sql
         healthcheck:
           test: ["CMD", "mysqladmin", "ping"]
         networks:

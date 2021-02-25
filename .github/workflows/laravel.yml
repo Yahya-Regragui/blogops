@@ -29,7 +29,6 @@ jobs:
      
     - name: unit testing
       run: |
-        docker-compose exec -T backend php artisan migrate
         docker-compose exec -T backend php artisan test
         docker-compose down
     

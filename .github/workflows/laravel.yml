@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: build app
-      run: docker-compose up -d
+      run: docker-compose up -d --build
       
     #- name: running db
      # uses: jakejarvis/wait-action@master

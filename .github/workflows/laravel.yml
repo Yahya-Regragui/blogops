@@ -27,8 +27,8 @@ jobs:
         
     - name: unit testing
       run: |
-        docker exec -d blogops-fullsrack_backend_1 php artisan migrate
-        docker exec -d blogops-fullsrack_backend_1 php artisan test
+        docker-compose exec -T blogops-fullsrack_backend_1 php artisan migrate
+        docker-compose exec -T blogops-fullsrack_backend_1 php artisan test
         docker-compose down
     
           

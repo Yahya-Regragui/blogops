@@ -21,7 +21,7 @@ jobs:
     - name: unit tests
       run: |
         docker-compose up -d
-        docker exec desktop_backend_1 php artisan test
+        docker exec blogops-fullsrack_backend_1 php artisan test
         docker-compose down
         
     - name: push to docker hub

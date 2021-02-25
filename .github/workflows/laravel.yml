@@ -16,14 +16,15 @@ jobs:
       with:
         php-version: '8.0'
     - uses: actions/checkout@v2
+    
     - name: build app
-      run: |
-          docker-compose build
-          docker-compose up -d
+      run: docker-compose up -d
+      
     - name: running db
       uses: jakejarvis/wait-action@master
       with:
-        time: '10s'
+        time: '20s'
+        
     - name: unit testing
       run: |
         docker exec blogops-fullsrack_backend_1 php artisan migrate

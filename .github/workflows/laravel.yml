@@ -20,11 +20,12 @@ jobs:
     - name: build app
       run: docker-compose up -d
       
-    - name: running db
-      uses: jakejarvis/wait-action@master
-      with:
-        time: '10s'
-        
+    #- name: running db
+     # uses: jakejarvis/wait-action@master
+      #with:
+       # time: '10s'
+    - name: docker ps
+      run: docker ps -a
     - name: unit testing
       run: |
         docker-compose exec -T backend php artisan migrate

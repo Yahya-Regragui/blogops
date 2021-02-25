@@ -24,8 +24,9 @@ jobs:
       uses: jakejarvis/wait-action@master
       with:
         time: '20s'
-    - name: docker ps
-      run: docker ps -a
+    #- name: docker ps
+     # run: docker ps -a
+     
     - name: unit testing
       run: |
         docker-compose exec -T backend php artisan migrate

@@ -10,8 +10,7 @@ services:
 
         ports:
             - 8000:8000
-        volumes:
-            - ./backend:/app/backend
+        
         depends_on:
             - mysql
         networks:
@@ -25,8 +24,7 @@ services:
         tty: true
         ports:
             - 4200:4200
-        volumes:
-            - ./frontend:/app/frontend
+        
         
         networks:
             - app
